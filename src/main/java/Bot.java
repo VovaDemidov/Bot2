@@ -27,14 +27,14 @@ public class Bot {
         };
         telegramBot.setUpdatesListener(updatesListener);
 */
-
+        
         telegramBot.setUpdatesListener(updates -> {
 
             System.out.println(updates);
             System.out.println("New updates");
             for (int i = 0; i < updates.size(); i++) {
 
-                List<SaleCard> saleCards = new ArrayList<>();
+                List < SaleCard > saleCards = new ArrayList <> ( );
 
                 if (updates.get(i)
                         .message() != null) {
